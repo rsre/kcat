@@ -54,7 +54,7 @@ struct rd_kafka_metadata foo;"
 
     # Check for Avro and Schema-Registry client libs
     if [[ $WITH_AVRO == y ]] &&
-           mkl_lib_check --libname=avro-c "avroc" "" disable CC "-lavro" "#include <avro.h>" &&
+    #      mkl_lib_check --libname=avro-c "avroc" "" disable CC "-lavro" "#include <avro.h>" &&
            mkl_lib_check "serdes" HAVE_SERDES disable CC "-lserdes" \
         "#include <sys/types.h>
         #include  <stdlib.h>
